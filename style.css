@@ -121,7 +121,7 @@ nav {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.8;
-  text-align: center;   /* or center, right depending on what you need */
+  text-align: left;   /* or center, right depending on what you need */
   margin: 0;          /* removes extra space outside */
   padding: 0;         /* removes inner spacing */
 }
