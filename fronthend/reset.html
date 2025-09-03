@@ -1,0 +1,31 @@
+<h2>Reset Password</h2>
+<form id="resetForm">
+  <label>Email:</label>
+  <input type="email" id="resetEmail" required>
+  <br><br>
+
+  <label>New Password:</label>
+  <input type="password" id="newPassword" required>
+  <br><br>
+
+  <button type="submit">Reset Password</button>
+</form>
+
+<script>
+  document.getElementById("resetForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const resetEmail = document.getElementById("resetEmail").value;
+    const newPassword = document.getElementById("newPassword").value;
+
+    const storedEmail = localStorage.getItem("email");
+
+    if (resetEmail === storedEmail) {
+      localStorage.setItem("password", newPassword);
+      alert("Password reset successful! Please login again.");
+      window.location.href = "login.html";
+    } else {
+      alert("Email not found!");
+    }
+  });
+</script>

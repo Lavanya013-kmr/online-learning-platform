@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - SSPM</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Extra styles for the college info section */
+    .college-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px;
+    }
+    .college-container img {
+      height: 150px;
+    }
+    .text-box {
+      border: 2px solid black;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* ✅ Start Learning Section Styles */
+    .start-learning {
+      margin: 40px auto;
+      width: 90%;
+    }
+
+    .start-learning h1 {
+      text-align: center;
+      font-size: 32px;
+      margin: 20px 0;
+    }
+
+    .start-learning h1 span {
+      color: #484b96;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .course-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo"><b><i><h1 style="color: black;">SSPM DIGITAL CAMPUS</h1></i></b></div>
+      <ul class="nav-links">
+        <li><a href="index.html" style="background-color: black;">Home</a></li>
+        <!-- Add onclick alert for Student and Instructor -->
+        <li><a href="#" onclick="alert('Please login or sign up to access Student Dashboard');" style="background-color: black;">Student</a></li>
+        <li><a href="#" onclick="alert('Please login or sign up to access Instructor Dashboard');" style="background-color: black;">Instructor</a></li>
+        <li><a href="login.html" class="btn-link" style="background-color: black;">Login</a></li>
+        <li><a href="signup.html" class="btn-link" style="background-color: black;">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- College Info Section -->
+  <section class="college-container">
+    <!-- Left College Logo -->
+    <img src="images/sspmlogo.png" alt="College Logo" height="200">
+
+    <!-- Center Text -->
+    <div class="college-info">
+      <h1> 
+        Sindhudurg Shikshan Prasarak Mandal's <br>
+        College of Engineering, <strong>Kankavli</strong> <br>
+        Affiliated to Mumbai University, Mumbai <br>
+        Approved By AICTE, New Delhi & DTE Mumbai <br>
+        Accredited by NAAC 'B+' Grade.
+      </h1>
+    </div>
+
+    <!-- Right NAAC Logo -->
+    <img src="images/nccgrade.png" alt="NAAC Logo">
+    <br>
+  </section>
+
+  <div class="herosection">
+    <div class="slideshow">
+      <img src="images/sspm1.jpeg" alt="Image 1">
+      <img src="images/sspm2.jpeg" alt="Image 2">
+      <img src="images/sspm3.jpeg" alt="Image 3">
+    </div>
+
+    <div class="tagline">
+      <h1 style="text-align: left;">ONLINE <br>LEARNING <br>PLATFORM<br><b style="color: #484b96;"> KNOWLEDGE <br>AT<br> YOUR<br> FINGERTIPS</b></h1>
+    </div>
+  </div>
+
+  <!-- ✅ Start Learning Section -->
+  <section class="start-learning">
+    <h1>Start <span>Learning</span></h1>
+    <div class="course-grid">
+  <a href="html-course.html" class="course-card" style="background-color: antiquewhite;">HTML</a>
+  <a href="css-course.html" class="course-card" style="background-color: antiquewhite;">CSS</a>
+  <a href="javascript-course.html" class="course-card" style="background-color: antiquewhite;">JavaScript</a>
+  <a href="python-course.html" class="course-card" style="background-color: antiquewhite;">Python</a>
+  <a href="java-course.html" class="course-card" style="background-color: antiquewhite;">Java</a>
+  <a href="sql-course.html" class="course-card" style="background-color: antiquewhite;">SQL</a>
+  <a href="linux-course.html" class="course-card" style="background-color: antiquewhite;">Linux</a>
+  <a href="cpp-course.html" class="course-card" style="background-color: antiquewhite;">C++</a>
+  <a href="dsa-course.html" class="course-card" style="background-color: antiquewhite;">DSA</a>
+</div>
+
+   </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SSPM DIGITAL CAMPUS. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

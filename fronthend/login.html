@@ -1,0 +1,47 @@
+<form id="loginForm">
+  <label for="role">Select Role:</label>
+  <select id="role" required>
+    <option value="">-- Choose --</option>
+    <option value="student">Student</option>
+    <option value="instructor">Instructor</option>
+  </select>
+  <br><br>
+
+  <label>Email:</label>
+  <input type="email" id="email" placeholder="Enter email" required>
+  <br><br>
+
+  <label>Password:</label>
+  <input type="password" id="password" placeholder="Enter password" required>
+  <br><br>
+
+  <button type="submit" style="background-color:white;">Login</button>
+</form>
+
+<!-- Link for forgot password -->
+<p><a href="reset.html">Forgot Password?</a></p>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const role = document.getElementById("role").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const storedRole = localStorage.getItem("role");
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
+
+    if (email === storedEmail && password === storedPassword && role === storedRole) {
+      alert("Login successful!");
+      if (role === "student") {
+        window.location.href = "student.html";
+      } else if (role === "instructor") {
+        window.location.href = "instructor.html";
+      }
+    } else {
+      alert("Invalid email or password!");
+    }
+  });
+</script>
