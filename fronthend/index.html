@@ -65,6 +65,55 @@
       transform: translateY(-5px);
       box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
     }
+
+      /* ✅ Faculty Section Styles */
+  .faculty-section {
+    margin: 50px auto;
+    width: 90%;
+  }
+
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .faculty-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .faculty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .faculty-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .faculty-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .faculty-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+
   </style>
 </head>
 <body>
@@ -116,6 +165,8 @@
     </div>
   </div>
 
+   
+
   <!-- ✅ Start Learning Section -->
   <section class="start-learning">
     <h1>Start <span>Learning</span></h1>
@@ -132,6 +183,100 @@
 </div>
 
    </section>
+
+    <!-- ✅ Faculty Information Section -->
+  <section class="faculty-section">
+    <h1 style="text-align:center; margin:30px 0; font-size:32px;">
+      Our <span style="color:#484b96;">Faculty</span>
+    </h1>
+    <div class="faculty-grid">
+      
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/mhapsekar_sir.jpeg" alt="Faculty 1">
+        <h3>Mr. Darshan P. Mhapsekar</h3>
+        <p> Head of Department(Computer Engineering)</p>
+        <a href="dpmhapasekar@sspmcoe.ac.in" style="color: blue; text-decoration: underline;">dpmhapasekar@sspmcoe.ac.in </a>
+      </div>
+
+      <!-- Faculty Card 2 -->
+      <div class="faculty-card">
+        <img src="images/shivasarn_sir.jpeg" alt="Faculty 2">
+        <h3>Dr. Nitin Mahadeo Shivsharan</h3>
+        <p>Head of Department (Computer science)</p>
+        <a href=" nmshivsharan@sspmcoe.ac.in" style="color: blue; text-decoration: underline;">nmshivsharan@sspmcoe.ac.in </a>
+      </div>
+
+      <!-- Faculty Card 3 -->
+      <div class="faculty-card">
+        <img src="images/melasagare_sir.jpeg" alt="Faculty 3">
+        <h3>Mr. Melasagare S. M. </h3>
+        <p>Assistant Professor(computer Engineering) </p>
+        <a href=" smmelasagare@sspmcoe.ac.in" style="color: blue; text-decoration: underline;">smmelasagare@sspmcoe.ac.in </a>
+        
+      </div>
+
+      <!-- Faculty Card 4 -->
+      <div class="faculty-card">
+        <img src="images/sawant_sir.jpg" alt="Faculty 4">
+        <h3>Mr. Suyog P. Sawant </h3>
+        <p>Assistant Professor (computer science and Engineering)</p>
+        <a href=" spsawant@sspmcoe.ac.in" style="color: blue; text-decoration: underline;">spsawant@sspmcoe.ac.in </a>
+      </div>
+
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/vanjari_sir.jpg" alt="Faculty 5">
+        <h3>Prof. Sachin V. Vanjari</h3>
+        <p> Head of Department(mechanical Engineering)</p>
+        <a href="sachinvanjari@rediffmail.com" style="color: blue; text-decoration: underline;">sachinvanjari@rediffmail.com </a>
+      </div>
+
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/manjarekar_sir.jpg" alt="Faculty 6">
+        <h3>Mr. Ekanth Laxman Manjarekar</h3>
+        <p> Assistant Professor</p>
+        <a href="ekanthmanjarekar@gmail.com" style="color: blue; text-decoration: underline;">ekanthmanjarekar@gmail.com </a>
+      </div>
+
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/kulkarni_sir.jpeg" alt="Faculty 7">
+        <h3> Dr. Kulkarni Sourabh S. </h3>
+        <p> Assistant Professor</p>
+        <a href="sskulkarni@sspmcoe.ac.in" style="color: blue; text-decoration: underline;">sskulkarni@sspmcoe.ac.in</a>
+      </div>
+
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/salavi_sir.jpg" alt="Faculty 8">
+        <h3>Prof. Onkar C. Salavi</h3>
+        <p> Head of Department(first Year)</p>
+        <a href="onkar83konkan@gmail.com" style="color: blue; text-decoration: underline;">onkar83konkan@gmail.com </a>
+      </div>
+
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/satam_sir.png" alt="Faculty 9">
+        <h3>Dr. Satam Mahesh Kamalaka</h3>
+        <p> Assistant Professor</p>
+        <a href="mksatam@sspmcoe.ac.in" style="color: blue; text-decoration: underline;">mksatam@sspmcoe.ac.in</a>
+      </div>
+
+      <!-- Faculty Card 1 -->
+      <div class="faculty-card">
+        <img src="images/mane_mam.jpg" alt="Faculty 10">
+        <h3> Dr.Shubhangi Tanaji Mane</h3>
+        <p> Assistant Professor</p>
+        <a href=" stmane@sspmcoe.ac.in" style="color: blue; text-decoration: underline;"> stmane@sspmcoe.ac.in</a>
+      </div>
+
+      
+
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer>
